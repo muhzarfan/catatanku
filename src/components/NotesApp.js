@@ -10,8 +10,7 @@ import Header from './Header';
 import Footer from './Footer';
 import AuthModal from './AuthModal';
 
-// API URL
-const API_BASE_URL = process.env.BACKEND_API_BASE_URL;
+const API_BASE_URL = process.env.REACT_APP_BACKEND_API_BASE_URL;
 
 const RichTextEditor = ({ value, onChange, placeholder }) => {
   const editorRef = useRef(null);
@@ -518,6 +517,13 @@ const NotesApp = () => {
                   </div>
                 </div>
                 
+                <div className="note-date">
+                  Created: {note.createdAt}
+                  {note.updatedAt !== note.createdAt && (
+                    <span> • Updated: {note.updatedAt}</span>
+                  )}
+                </div>
+
                 {note.tags && (
                   <div className="tags">
                     {parseTags(note.tags).map((tag, index) => (
@@ -532,12 +538,7 @@ const NotesApp = () => {
                   dangerouslySetInnerHTML={{ __html: note.content || 'No content' }}
                 />
                 
-                <div className="note-date">
-                  Created: {note.createdAt}
-                  {note.updatedAt !== note.createdAt && (
-                    <span> • Updated: {note.updatedAt}</span>
-                  )}
-                </div>
+                
               </div>
             ))}
           </div>
