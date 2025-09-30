@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { X, User, Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import '../styles/NotesApp.css';
 
-const API_BASE_URL = process.env.BACKEND_API_BASE_URL;
+const API_BASE_URL = process.env.REACT_APP_BACKEND_API_BASE_URL;
 
 const AuthModal = ({ isOpen, mode, onClose, onSwitchMode, onAuthSuccess }) => {
   const [formData, setFormData] = useState({
-    name: '', // Digunakan sebagai Username
+    name: '', 
     email: '',
     password: '',
     confirmPassword: ''
