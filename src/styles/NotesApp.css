@@ -294,7 +294,6 @@ div {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 12px;
 }
 
 .note-title {
@@ -468,6 +467,7 @@ div {
   font-size: 12px;
   color: #666;
   font-weight: 400;
+  margin-bottom: 14px;
 }
 
 /* Empty State */
