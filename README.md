@@ -83,6 +83,6 @@ npm run build
 
 ## 📌 Catatan
 - Pastikan Node.js dan npm sudah terinstall.
-- Environment variable di file `.env` diperlu diatur sesuai API Backend yang digunakan.
+- Environment variable di file `.env` perlu diatur sesuai API Backend yang digunakan.
 
 ---
