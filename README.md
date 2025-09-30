@@ -75,16 +75,14 @@ npm run build
 ---
 
 ## 📸 Preview
-_(opsional, bisa tambahkan screenshot UI aplikasi kamu di sini)_
+![Tampilan Awal](https://github.com/user-attachments/assets/9698ce0e-9193-4585-8407-58389ad5d148)
+![Membuat Catatan](https://github.com/user-attachments/assets/39dafefc-9f7d-424a-bc4c-25fd3cd012ea)
+![List Catatan](https://github.com/user-attachments/assets/530f5b99-ce38-4648-a952-1b42019fe3c3)
 
 ---
 
 ## 📌 Catatan
 - Pastikan Node.js dan npm sudah terinstall.
-- Kamu bisa menambahkan environment variable di file `.env` jika diperlukan.
+- Environment variable di file `.env` diperlu diatur sesuai API Backend yang digunakan.
 
 ---
-
-## 📄 License
-Project ini menggunakan lisensi **MIT**.  
-Silakan gunakan, modifikasi, dan distribusikan sesuai kebutuhan.
